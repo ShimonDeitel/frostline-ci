@@ -30,6 +30,13 @@ final class FrostlineUITests: XCTestCase {
         XCTAssertTrue(toggle.waitForExistence(timeout: 5))
         toggle.tap()
 
+        // Toggling off collapses the Duration section with an animation;
+        // wait for it to actually leave the hierarchy before tapping Save,
+        // otherwise Save can land on a still-settling layout.
+        let minutesField = app.textFields["durationMinutesField"]
+        let sectionGone = expectation(for: NSPredicate(format: "exists == false"), evaluatedWith: minutesField, handler: nil)
+        wait(for: [sectionGone], timeout: 5)
+
         app.buttons["logSaveButton"].tap()
 
         XCTAssertTrue(app.staticTexts["Marked as skipped today"].waitForExistence(timeout: 12))
