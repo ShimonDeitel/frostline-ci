@@ -144,13 +144,13 @@ struct StreakView: View {
                         .foregroundStyle(FrostTheme.inkFaded)
                 }
             }
-            .accessibilityElement(children: .combine)
             Spacer()
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 14)
         .background(RoundedRectangle(cornerRadius: 16).fill(FrostTheme.surface))
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(FrostTheme.cardBorder, lineWidth: 1))
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("todayStatusCard")
     }
 
