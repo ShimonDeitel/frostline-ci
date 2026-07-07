@@ -28,12 +28,20 @@ final class FrostlineUITests: XCTestCase {
 
         let toggle = app.switches["tookShowerToggle"]
         XCTAssertTrue(toggle.waitForExistence(timeout: 5))
-        toggle.tap()
+
+        // A plain .tap() on this Form-embedded Toggle doesn't reliably land on
+        // the actual switch control (its reported frame spans the whole row,
+        // label included); tap the trailing edge where the switch knob is.
+        toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
 
         // Toggling off collapses the Duration section with an animation;
         // wait for it to actually leave the hierarchy before tapping Save,
-        // otherwise Save can land on a still-settling layout.
+        // otherwise Save can land on a still-settling layout. Retry the tap
+        // once if the first one didn't register.
         let minutesField = app.textFields["durationMinutesField"]
+        if minutesField.waitForExistence(timeout: 2) {
+            toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+        }
         let sectionGone = expectation(for: NSPredicate(format: "exists == false"), evaluatedWith: minutesField, handler: nil)
         wait(for: [sectionGone], timeout: 5)
 
