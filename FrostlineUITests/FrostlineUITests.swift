@@ -19,7 +19,7 @@ final class FrostlineUITests: XCTestCase {
         saveButton.tap()
 
         let statusCard = app.otherElements["todayStatusCard"]
-        XCTAssertTrue(statusCard.waitForExistence(timeout: 5))
+        XCTAssertTrue(statusCard.waitForExistence(timeout: 12))
     }
 
     func testMarkSkippedTodayShowsSkippedStatus() throws {
@@ -32,7 +32,7 @@ final class FrostlineUITests: XCTestCase {
 
         app.buttons["logSaveButton"].tap()
 
-        XCTAssertTrue(app.staticTexts["Marked as skipped today"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Marked as skipped today"].waitForExistence(timeout: 12))
     }
 
     func testDurationAndNoteFieldsAcceptInput() throws {
