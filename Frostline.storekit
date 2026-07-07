@@ -1,0 +1,43 @@
+{
+  "identifier" : "Frostline",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_locale" : "en_US",
+    "_storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "frostline_pro_group",
+      "localizations" : [],
+      "name" : "Frostline Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "frostline_pro_monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlocks full history and calendar, average duration, longest streak, and total cold showers.",
+              "displayName" : "Frostline Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "frostline_pro_monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Frostline Pro Monthly",
+          "subscriptionGroupID" : "frostline_pro_group",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

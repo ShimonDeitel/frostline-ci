@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0564D10512BB4D5561A7102E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C542A46F7FC40D102833B46 /* RootTabView.swift */; };
+		0BE5139C65E24883F5CD295A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327390AA28D3B12B5FCDB7 /* SettingsView.swift */; };
+		0EE2EBE5F8A8E7F0A2549695 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA41EC6C7312EEF2A3780A /* PaywallView.swift */; };
+		17FF82A4B07F18688ED9A7F3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6019CCF2C58FEEF28BFF8CC /* Theme.swift */; };
+		2062466E515CA2B6F7B0EC1C /* IceCrystalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE04AEE5CF80B5AE5CC459 /* IceCrystalView.swift */; };
+		35FB94381F347B1EED34BFC8 /* FrostlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B67BCA29B465B7E74346 /* FrostlineTests.swift */; };
+		3F30F2F3A8AEF3AD77A9136C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84740B0C27501507F996C1 /* HistoryView.swift */; };
+		3F4F444FDA65BF6390D91823 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E97A196E03ECC011119992 /* Store.swift */; };
+		422E8B24A138C0B36ED8208B /* FrostlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBF8E81E6266F07E7022496 /* FrostlineApp.swift */; };
+		702122C0929F218B191B66EE /* FrostlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2326AEC1F416838A0F67AF6 /* FrostlineUITests.swift */; };
+		863BA621FE945F0E859CEB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D0FB0DAE19F1F1AA1C207B /* Assets.xcassets */; };
+		A5DB95B69D15B92FF8F411A9 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7B89E20776DB798023D603 /* StreakView.swift */; };
+		C56AB5FC7E2255A6E8BA9070 /* Frostline.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 4103EC8D122DE4609C9F7A79 /* Frostline.storekit */; };
+		D13179A60D7B22BC779CB5D1 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCA80B09D7C0F6EE636A56 /* Sheets.swift */; };
+		DE754DCEEE504547893A0361 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B6B18FF505F8ADA91D1AA /* PurchaseManager.swift */; };
+		FA9309AAA037E2D06753D693 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092061C09D98AB21FC43F015 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		939A97D0CAD5B2553B6E9A7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73CC5553CFE1568192A16E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35243C96EB32E45253501662;
+			remoteInfo = Frostline;
+		};
+		E44E02F10386300B07FA394E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73CC5553CFE1568192A16E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35243C96EB32E45253501662;
+			remoteInfo = Frostline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092061C09D98AB21FC43F015 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0DBF8E81E6266F07E7022496 /* FrostlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostlineApp.swift; sourceTree = "<group>"; };
+		3F84740B0C27501507F996C1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4103EC8D122DE4609C9F7A79 /* Frostline.storekit */ = {isa = PBXFileReference; path = Frostline.storekit; sourceTree = "<group>"; };
+		4C542A46F7FC40D102833B46 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		564E1980C9384878D635D1E3 /* FrostlineTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FrostlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7B89E20776DB798023D603 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		7511B67BCA29B465B7E74346 /* FrostlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostlineTests.swift; sourceTree = "<group>"; };
+		7DB2DC3143C5C531C8D301BC /* Frostline.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Frostline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FA41EC6C7312EEF2A3780A /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		9E327390AA28D3B12B5FCDB7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A4E97A196E03ECC011119992 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A6D0FB0DAE19F1F1AA1C207B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECE04AEE5CF80B5AE5CC459 /* IceCrystalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCrystalView.swift; sourceTree = "<group>"; };
+		BA8B6691BAF6C21CF44A1D57 /* FrostlineUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FrostlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF0E39068F4E15E8E173CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE0B6B18FF505F8ADA91D1AA /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		C2326AEC1F416838A0F67AF6 /* FrostlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostlineUITests.swift; sourceTree = "<group>"; };
+		D0CCA80B09D7C0F6EE636A56 /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		F6019CCF2C58FEEF28BFF8CC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		65EBF50C72D909CCF8C03500 = {
+			isa = PBXGroup;
+			children = (
+				A904041F06D8964CC80D7F46 /* Frostline */,
+				86F93D0AF70FBC755A90D5AB /* FrostlineTests */,
+				A400141C0129E349E6F58E76 /* FrostlineUITests */,
+				4103EC8D122DE4609C9F7A79 /* Frostline.storekit */,
+				A2CBE2F1F641113C4A0D1621 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86F93D0AF70FBC755A90D5AB /* FrostlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				7511B67BCA29B465B7E74346 /* FrostlineTests.swift */,
+			);
+			path = FrostlineTests;
+			sourceTree = "<group>";
+		};
+		A2CBE2F1F641113C4A0D1621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB2DC3143C5C531C8D301BC /* Frostline.app */,
+				564E1980C9384878D635D1E3 /* FrostlineTests.xctest */,
+				BA8B6691BAF6C21CF44A1D57 /* FrostlineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A400141C0129E349E6F58E76 /* FrostlineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2326AEC1F416838A0F67AF6 /* FrostlineUITests.swift */,
+			);
+			path = FrostlineUITests;
+			sourceTree = "<group>";
+		};
+		A904041F06D8964CC80D7F46 /* Frostline */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0FB0DAE19F1F1AA1C207B /* Assets.xcassets */,
+				0DBF8E81E6266F07E7022496 /* FrostlineApp.swift */,
+				3F84740B0C27501507F996C1 /* HistoryView.swift */,
+				AECE04AEE5CF80B5AE5CC459 /* IceCrystalView.swift */,
+				BCF0E39068F4E15E8E173CBA /* Info.plist */,
+				092061C09D98AB21FC43F015 /* Models.swift */,
+				90FA41EC6C7312EEF2A3780A /* PaywallView.swift */,
+				BE0B6B18FF505F8ADA91D1AA /* PurchaseManager.swift */,
+				4C542A46F7FC40D102833B46 /* RootTabView.swift */,
+				9E327390AA28D3B12B5FCDB7 /* SettingsView.swift */,
+				D0CCA80B09D7C0F6EE636A56 /* Sheets.swift */,
+				A4E97A196E03ECC011119992 /* Store.swift */,
+				6E7B89E20776DB798023D603 /* StreakView.swift */,
+				F6019CCF2C58FEEF28BFF8CC /* Theme.swift */,
+			);
+			path = Frostline;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35243C96EB32E45253501662 /* Frostline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33EDB4242964DCA07FD6AF0E /* Build configuration list for PBXNativeTarget "Frostline" */;
+			buildPhases = (
+				0BECC48D7BA9E810647336FA /* Sources */,
+				988AB9918F5E82DC5D05638B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Frostline;
+			packageProductDependencies = (
+			);
+			productName = Frostline;
+			productReference = 7DB2DC3143C5C531C8D301BC /* Frostline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44B4BD9B7ED9DAAC6C49BFE6 /* FrostlineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993811C5789B91B8F4280FB0 /* Build configuration list for PBXNativeTarget "FrostlineUITests" */;
+			buildPhases = (
+				8DAA84B0F0EE0AD7EB98F5FB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				141A2B8D4CC2BAA71B7823FF /* PBXTargetDependency */,
+			);
+			name = FrostlineUITests;
+			packageProductDependencies = (
+			);
+			productName = FrostlineUITests;
+			productReference = BA8B6691BAF6C21CF44A1D57 /* FrostlineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE96A35BDCC98AA366C68F12 /* FrostlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F35A4DEB9C85862CB9304DB /* Build configuration list for PBXNativeTarget "FrostlineTests" */;
+			buildPhases = (
+				344427223D5589F9A6009614 /* Sources */,
+				C460F0EFF90B6864FABC5095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A025511DAA1991376421FAD /* PBXTargetDependency */,
+			);
+			name = FrostlineTests;
+			packageProductDependencies = (
+			);
+			productName = FrostlineTests;
+			productReference = 564E1980C9384878D635D1E3 /* FrostlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F73CC5553CFE1568192A16E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					35243C96EB32E45253501662 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+					44B4BD9B7ED9DAAC6C49BFE6 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 35243C96EB32E45253501662;
+					};
+					CE96A35BDCC98AA366C68F12 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D33C02F8A05CBF15C6D79B1 /* Build configuration list for PBXProject "Frostline" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 65EBF50C72D909CCF8C03500;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A2CBE2F1F641113C4A0D1621 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35243C96EB32E45253501662 /* Frostline */,
+				CE96A35BDCC98AA366C68F12 /* FrostlineTests */,
+				44B4BD9B7ED9DAAC6C49BFE6 /* FrostlineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		988AB9918F5E82DC5D05638B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863BA621FE945F0E859CEB49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C460F0EFF90B6864FABC5095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56AB5FC7E2255A6E8BA9070 /* Frostline.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BECC48D7BA9E810647336FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422E8B24A138C0B36ED8208B /* FrostlineApp.swift in Sources */,
+				3F30F2F3A8AEF3AD77A9136C /* HistoryView.swift in Sources */,
+				2062466E515CA2B6F7B0EC1C /* IceCrystalView.swift in Sources */,
+				FA9309AAA037E2D06753D693 /* Models.swift in Sources */,
+				0EE2EBE5F8A8E7F0A2549695 /* PaywallView.swift in Sources */,
+				DE754DCEEE504547893A0361 /* PurchaseManager.swift in Sources */,
+				0564D10512BB4D5561A7102E /* RootTabView.swift in Sources */,
+				0BE5139C65E24883F5CD295A /* SettingsView.swift in Sources */,
+				D13179A60D7B22BC779CB5D1 /* Sheets.swift in Sources */,
+				3F4F444FDA65BF6390D91823 /* Store.swift in Sources */,
+				A5DB95B69D15B92FF8F411A9 /* StreakView.swift in Sources */,
+				17FF82A4B07F18688ED9A7F3 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344427223D5589F9A6009614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FB94381F347B1EED34BFC8 /* FrostlineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DAA84B0F0EE0AD7EB98F5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702122C0929F218B191B66EE /* FrostlineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A025511DAA1991376421FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35243C96EB32E45253501662 /* Frostline */;
+			targetProxy = 939A97D0CAD5B2553B6E9A7D /* PBXContainerItemProxy */;
+		};
+		141A2B8D4CC2BAA71B7823FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35243C96EB32E45253501662 /* Frostline */;
+			targetProxy = E44E02F10386300B07FA394E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25D82932C748D52AC42CB8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Frostline;
+			};
+			name = Release;
+		};
+		26E715BEC4CDD079220E25C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A5206BC4D70F82B9CC41005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Frostline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E93D9BE4F3170DF44F06F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Frostline;
+			};
+			name = Debug;
+		};
+		5C9E0EA6BE6485135929DEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frostline.app/Frostline";
+			};
+			name = Debug;
+		};
+		BDBF30016BD22A9762373AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9D7C733035266614E71C6DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Frostline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2DD03CF9A6AD5D8FD1D6D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.frostline.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frostline.app/Frostline";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D33C02F8A05CBF15C6D79B1 /* Build configuration list for PBXProject "Frostline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBF30016BD22A9762373AA6 /* Debug */,
+				26E715BEC4CDD079220E25C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		33EDB4242964DCA07FD6AF0E /* Build configuration list for PBXNativeTarget "Frostline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5206BC4D70F82B9CC41005 /* Debug */,
+				E9D7C733035266614E71C6DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F35A4DEB9C85862CB9304DB /* Build configuration list for PBXNativeTarget "FrostlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9E0EA6BE6485135929DEA4 /* Debug */,
+				F2DD03CF9A6AD5D8FD1D6D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		993811C5789B91B8F4280FB0 /* Build configuration list for PBXNativeTarget "FrostlineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E93D9BE4F3170DF44F06F6C /* Debug */,
+				25D82932C748D52AC42CB8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F73CC5553CFE1568192A16E3 /* Project object */;
+}
