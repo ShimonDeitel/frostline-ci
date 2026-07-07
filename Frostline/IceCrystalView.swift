@@ -60,7 +60,7 @@ struct IceCrystalView: View {
         var corePath = Path()
         for i in 0..<6 {
             let a = (Double(i) / 6.0) * 2 * .pi - .pi / 2
-            let point = CGPoint(x: center.x + cos(a) * radius * 0.16, y: center.y + sin(a) * radius * 0.16)
+            let point = CGPoint(x: center.x + CGFloat(cos(a)) * radius * 0.16, y: center.y + CGFloat(sin(a)) * radius * 0.16)
             if i == 0 { corePath.move(to: point) } else { corePath.addLine(to: point) }
         }
         corePath.closeSubpath()
@@ -72,8 +72,8 @@ struct IceCrystalView: View {
     }
 
     private func drawArm(gc: GraphicsContext, center: CGPoint, radius: CGFloat, angle: Double, layers: Int, color: Color, deepColor: Color) {
-        let dx = cos(angle)
-        let dy = sin(angle)
+        let dx = CGFloat(cos(angle))
+        let dy = CGFloat(sin(angle))
         let tip = CGPoint(x: center.x + dx * radius, y: center.y + dy * radius)
 
         var mainPath = Path()
@@ -86,8 +86,8 @@ struct IceCrystalView: View {
         // Branches perpendicular to the main arm, spaced along its length,
         // one pair per layer, growing shorter toward the tip.
         let perpAngle = angle + .pi / 2
-        let pdx = cos(perpAngle)
-        let pdy = sin(perpAngle)
+        let pdx = CGFloat(cos(perpAngle))
+        let pdy = CGFloat(sin(perpAngle))
 
         for layer in 1...layers {
             let t = CGFloat(layer) / CGFloat(layers + 1)
@@ -96,8 +96,8 @@ struct IceCrystalView: View {
 
             for sign: CGFloat in [-1, 1] {
                 let branchAngle = angle + (.pi / 3.4) * Double(sign)
-                let bdx = cos(branchAngle)
-                let bdy = sin(branchAngle)
+                let bdx = CGFloat(cos(branchAngle))
+                let bdy = CGFloat(sin(branchAngle))
                 let branchTip = CGPoint(x: basePoint.x + bdx * branchLength, y: basePoint.y + bdy * branchLength)
                 var branchPath = Path()
                 branchPath.move(to: basePoint)
@@ -112,10 +112,10 @@ struct IceCrystalView: View {
         let sparkleCount = 6
         for i in 0..<sparkleCount {
             let phase = time * 1.3 + Double(i) * (2 * .pi / Double(sparkleCount))
-            let pulsing = (sin(phase) + 1) / 2
+            let pulsing = (CGFloat(sin(phase)) + 1) / 2
             let dist = radius * (0.35 + 0.5 * CGFloat(i % 3) / 2)
             let angle = Double(i) / Double(sparkleCount) * 2 * .pi
-            let point = CGPoint(x: center.x + cos(angle) * dist, y: center.y + sin(angle) * dist)
+            let point = CGPoint(x: center.x + CGFloat(cos(angle)) * dist, y: center.y + CGFloat(sin(angle)) * dist)
             let size = 3 + pulsing * 3
             let rect = CGRect(x: point.x - size / 2, y: point.y - size / 2, width: size, height: size)
             gc.fill(Path(ellipseIn: rect), with: .color(.white.opacity(0.4 + pulsing * 0.5)))
@@ -127,8 +127,8 @@ struct IceCrystalView: View {
         let crackCount = 8
         for i in 0..<crackCount {
             let angle = (Double(i) / Double(crackCount)) * 2 * .pi
-            let dx = cos(angle)
-            let dy = sin(angle)
+            let dx = CGFloat(cos(angle))
+            let dy = CGFloat(sin(angle))
             let start = CGPoint(x: center.x + dx * radius * 0.2, y: center.y + dy * radius * 0.2)
             let end = CGPoint(x: center.x + dx * radius * 0.9, y: center.y + dy * radius * 0.9)
             var path = Path()
